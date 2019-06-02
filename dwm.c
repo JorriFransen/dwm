@@ -2034,7 +2034,7 @@ updatebars(void)
 // 		                          CWOverrideRedirect|CWBackPixmap|CWEventMask, &wa);
 		m->barwin = XCreateWindow(dpy, root, m->wx, m->by, w, bh, 0, depth,
 		                          InputOutput, visual,
-		                          CWOverrideRedirect|CWBackPixmap|CWEventMask|CWColormap, &wa);
+		                          CWOverrideRedirect|CWBackPixel|CWBorderPixel|CWEventMask|CWColormap, &wa);
 // 		m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, depth,
 // 		                          InputOutput, visual,
 // 		                          CWOverrideRedirect|CWBackPixel|CWBorderPixel|CWColormap|CWEventMask, &wa);
@@ -2337,7 +2337,7 @@ updatesystray(void) {
 	XMapSubwindows(dpy, systray->win);
 	/* redraw background */
 	XSetForeground(dpy, drw->gc, scheme[SchemeNorm].bg->pix);
-	XFillRectangle(dpy, systray->win, drw->gc, 0, 0, w, bh);
+	XFillRectangle(dpy, systray->win, XCreateGC(dpy, root, 0, NULL), 0, 0, w, bh);
 	XSync(dpy, False);
 }
 
