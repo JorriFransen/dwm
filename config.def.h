@@ -2,7 +2,7 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Source Code Pro:size=11"
+    "Hack Nerd Font Mono:size=11"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char normbordercolor[] = "#444444";
