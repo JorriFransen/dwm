@@ -8,13 +8,13 @@ static const char dmenufont[]       = "monospace:size=10";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
+static const char selbordercolor[]  = "#ff8800";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
 static unsigned int baralpha        = OPAQUE;
 static unsigned int borderalpha     = OPAQUE;
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 10;        /* gaps between windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 0;   /* systray spacing */
